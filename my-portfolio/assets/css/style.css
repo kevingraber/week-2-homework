@@ -1,0 +1,109 @@
+.jumbotron img {
+	max-width: 100%
+}
+
+body {
+	padding-top:75px;
+}
+
+h1 {
+	font-family: 'Slabo 27px', serif;
+}
+
+p {
+	margin-top:20px;
+}
+
+footer {
+	background-color: #3e3f3a;
+	margin-top:40px;
+}
+
+footer p {
+	margin-bottom:20px;
+	color:white;
+}
+
+.thumb {
+	width:100%;
+}
+
+.social {
+	height:50px;
+	width:50px;
+	display:block;
+	margin-top:2px;
+}
+
+.profile {
+	height:270px;
+	width:270px;
+	float:left;
+	margin-right:15px;
+	border-style: groove;
+	border-width:1px;
+}
+
+.lessmargin {
+	margin-top:10px;
+}
+
+.social:hover {
+	-ms-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+#socialBar {
+	position:fixed;
+	top:200px;
+	left:5px;
+}
+
+.picture {
+	margin-top:10px;
+	font-size:16px;
+	font-family: 'Slabo 27px', serif;
+}
+
+.bot {
+	margin-bottom:40px;
+}
+
+/*makes the portfolio pictures fade over 1second*/
+@keyframes fade {
+	from {opacity: 1;}
+   	to {opacity: .4;}
+}
+
+.thumb:hover {
+	animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/*sticky footer experiment*/
+
+html, body {
+	height:100%;
+}
+
+#wrap {
+	min-height:100%;
+	height:auto;
+	margin:0 auto -100px;
+	padding: 0 0 60px;
+}
+
+.footer {
+	height:60px;
+}
+
+/*the social bar will disappear when the screen gets too small*/
+@media screen and (max-width:820px) {
+	#socialBar {
+		display:none;
+	}
+}
